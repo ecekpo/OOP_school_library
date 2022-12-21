@@ -40,3 +40,37 @@ class App
     exit 0
    end
   end
+
+  def create_a_person
+    print 'Do you want to create student (1) or a teacher (2)? [input your choice of number]:'
+    person_type = gets.chomp
+    case person_type
+    when '1'
+    create_student
+    when '2'
+    create_teacher
+    else
+    puts 'Invalid input, please enter valid input'
+    end
+  end
+  
+  def create_student
+    print 'Age: '
+    age = gets.chomp
+    print 'Name: '
+    name = gets.chomp
+    print 'Classroom: '
+    classroom = gets.chomp
+    print 'Student has parent permission? [Y/N]: '
+    parent_permission
+    when 'y'
+    @people.push(Student.new(classroom, age, name, parent_permission: true))
+    when 'n'
+    @people.push(Student.new(classroom, age, name, parent_permission: false))
+   else
+    puts 'Invalid input given'
+    end
+    puts 'Student created successfully'
+    hello
+    main
+  end
