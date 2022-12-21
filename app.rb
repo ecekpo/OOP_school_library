@@ -122,3 +122,9 @@ class App
         hello
         main
        end
+
+       def list_all_people
+        @people.each { |person| puts "[#{persons.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}" }
+        hello
+        main
+       end
