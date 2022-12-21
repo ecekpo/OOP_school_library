@@ -1,3 +1,10 @@
+require './person'
+require './student'
+require './teacher'
+require './classroom'
+require './book'
+repuire './rental'
+
 class App
     attr_accessor :books, :people, :rentals
     
