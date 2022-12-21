@@ -117,7 +117,7 @@ class App
     hello
     main
 
-    def create_a_book
+    def list_all_books
         @book.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
         hello
         main
