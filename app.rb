@@ -128,3 +128,19 @@ class App
         hello
         main
        end
+
+       def list_all_rentals_for_person_id
+        print 'ID of person: '
+        id = gets.chomp.to_i
+        puts 'Rentals: '
+        @rentals.each do |rental|
+         if rental.person.id == id
+        puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}"
+       else
+         puts 'Invalid rental ID'
+        end
+       end
+       hello
+       main
+       end
+      end
