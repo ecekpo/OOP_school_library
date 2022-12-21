@@ -116,3 +116,9 @@ class App
     puts 'Rental successfully created'
     hello
     main
+
+    def create_a_book
+        @book.each { |book| puts "Title: #{book.title}, Author: #{book.author}" }
+        hello
+        main
+       end
