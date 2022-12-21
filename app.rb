@@ -74,3 +74,16 @@ class App
     hello
     main
   end
+
+  def create_teacher
+    print 'Age'
+    age = gets.chomp
+    print 'Name'
+    name = gets'chomp
+    print 'Area of Specialization: '
+    specialization = gets.chomp
+    @people << Teacher.new(age, specialization, name, parent_permission: true)
+    puts 'Teacher created successfully'
+    hello
+    main
+   end
