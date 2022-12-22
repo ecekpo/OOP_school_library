@@ -1,5 +1,7 @@
 require './app'
 
-app = App.new
-app.hello
-app.main
+def main
+  app = App.new
+  app.run
+end
+main
